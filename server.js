@@ -9,7 +9,7 @@ const handle = app.getRequestHandler()
 app.prepare().then(() => {
   const server = express();
 
-  // How can I integrate custom server with next internationalized routing
+  // How to integrate custom server with next internationalized routing
   server.get('/a', async (req, res) => {
     console.log('/a route');
     const data = await app.render(req, res, req.path, req.query);
